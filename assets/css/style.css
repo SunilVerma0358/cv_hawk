@@ -110,10 +110,6 @@
 
 /* ----------------gap---------------- */
 
-.nav_gap {
-    gap: 41px;
-}
-
 
 /* keyparma */
 
@@ -205,11 +201,13 @@ nav ul li a:hover {
 
 .crossLine1 {
     rotate: 58deg;
+    background-color: var(--main) !important;
 }
 
 .crossLine2 {
     rotate: 123deg;
     bottom: 63%;
+    background-color: var(--main) !important;
 }
 
 .view {
@@ -229,6 +227,8 @@ nav ul li a:hover {
     text-align: center;
     border-bottom: 1px solid var(--gray);
     min-width: 303px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 
@@ -814,6 +814,8 @@ nav ul li a:hover {
 .button_slider:hover {
     background-color: var(--main);
     border: 1px solid transparent;
+    animation: pulsegardiant 1s;
+    box-shadow: 0 0 0 0.7em transparent;
 }
 
 .svg_hover svg path {
@@ -859,6 +861,7 @@ nav ul li a:hover {
 .accordion-button {
     background-color: var(--bg-accordion) !important;
     padding: 16px 20px 16px 20px !important;
+    font-size: var(--fs-xl) !important;
 }
 
 .accordion-body {
@@ -868,6 +871,11 @@ nav ul li a:hover {
 .accordion-item {
     border: 1px solid transparent !important;
     border-bottom: 1px solid var(--gray) !important;
+}
+
+.acc.accordion-item {
+    border: 1px solid transparent !important;
+    border-bottom: 1px solid transparent !important;
 }
 
 
@@ -957,6 +965,14 @@ nav ul li a:hover {
 .under-hover:hover::after {
     left: 0;
     width: 100%;
+}
+
+.svg_hover_footer {
+    transition: all linear 300ms;
+}
+
+.svg_hover_footer:hover {
+    transform: translateY(-25%);
 }
 
 
@@ -1193,6 +1209,9 @@ nav ul li a:hover {
         left: 35%;
     }
     /* nav bar */
+    .nav_gap {
+        gap: 41px;
+    }
     .view {
         max-width: unset;
         width: unset;
@@ -1202,6 +1221,8 @@ nav ul li a:hover {
     .border_bottom_nav {
         border-bottom: unset;
         min-width: unset;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     /* max-width */
     .mw_499 {
